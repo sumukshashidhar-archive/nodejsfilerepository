@@ -7,9 +7,13 @@ A simple to use application that allows you to store and download files quickly 
 
 ### Contents of .env file
 PORT
+
 IP
+
 mongoURI
+
 baseURL
+
 
 
 # To-Do
