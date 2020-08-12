@@ -10,3 +10,7 @@ PORT
 IP
 mongoURI
 baseURL
+
+
+# To-Do
+- [ ] Authentication
