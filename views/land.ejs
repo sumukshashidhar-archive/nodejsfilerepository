@@ -1,1 +1,6 @@
 <h1>File and Locations</h1>
+<% for(let i = 0; i < files.length; i++) { %>
+    <article>
+        <a href=<%= files[i].url %>><%= files[i].name %></a>
+    </article>
+<% } %>
