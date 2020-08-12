@@ -3,7 +3,7 @@ const bcrypt = require("bcrypt")
 const saltRounds = parseInt(process.env.saltRounds);
 module.exports = {
 
-    hashPassword: async function(plaintext_password) {
+    hashPassword: async (plaintext_password) => {
         return new Promise((resolve, reject) => {
             bcrypt.hash(plaintext_password, saltRounds, function(err, hashedPassword) {
                 if(err) {
@@ -18,7 +18,7 @@ module.exports = {
         })
     },
 
-    comparePassword: async function(hashedPassword, plaintext_password) {
+    comparePassword: async (hashedPassword, plaintext_password) => {
         return new Promise((resolve, reject) => {
             bcrypt.compare(plaintext_password, hashedPassword, function(err, result) {
                 if(err) {
