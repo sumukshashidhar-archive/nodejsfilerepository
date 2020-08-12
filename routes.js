@@ -9,4 +9,8 @@ module.exports = (app) => {
 
     // download route
     require("./routes/download")(app);
+
+
+    //auxiliary routes
+    require("./routes/auxiliary")(app); 
 }
